@@ -1,0 +1,116 @@
+/*
+Made by Kathryn Fletcher
+Due September 20, 2026
+File name: styles.css
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, h1, div, img { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for mobile viewport*/
+
+
+/*Style Rule for Body*/
+body {
+    background-color: #7a6985
+} 
+
+img {
+    max-width: 100%;
+    display: block
+}
+
+header {
+    float: left;
+    width: 25%;
+
+    /*Sticky Element (Only Affects the Genshin Impact Logo in upper left)*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+header img {
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+    margin: 5em 3em 0 0;
+    width: 70%;
+
+    /*mobile viewport
+    padding: 1%;
+    margin-bottom: 1%;*/
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+
+    /* mobile viewport. Text align will be center*/
+    
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: 'Lora', sans-serif;
+    /*Verdana, Arial, sans-serif;*/
+    font-weight: bold;
+
+    /* mobile viewport
+    header-top: 1px solid #fff;*/
+
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/*nav li:first-child[
+    border-top: none;
+]*/
+
+main {
+    clear: left;
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.25em;
+
+    border: 1px solid #000;
+    border-radius: 20px 20px 20px 20px;
+}
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+/*
+footer p a [
+    color: #fff;
+    text-decoration: none;
+*/
+
+/*container {
+    width: 80%;
+    margin 0 auto;
+}*/
+
+/*ul { 
+	list-style-type: square; 
+	} 
+*/

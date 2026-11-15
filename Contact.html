@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- SEO -->
+        <meta name="author" content="Kathryn Fletcher">
+        <meta name="description" content="This page serves as way for users to get in contact with the creator of the website. This is an assignment for my Webmaster class at Clayton State Univeristy due November 15, 2026.">
+
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+
+        <title>Genshin Lore Archive</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" type="text/css">
+
+        <style>
+            .important{color: red;}
+            p .important{color: green;}
+            a:hover{color: purple}
+        </style>
+    </head>
+
+    <body onload="showLastModified()">
+        <div class="page-wrapper"></div>
+        <header>
+            <h1>Genshin Lore Archive</h1>
+            <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="Characters.html">Characters</a>
+                </li>
+
+                <li>
+                    <a href="quests.html">Quests</a>
+                </li>
+            </ul>
+            </nav>
+        </header>
+
+    
+            <h1>Contact</h1>
+
+            <!-- Fieldset for personal information-->
+            <form action="mailto:kfletcher7@student.clayton.edu" method="post">
+                <fieldset>
+                    <label for="name">Full name:</label>
+                    <input type="text" id="name" name="fullname" placeholder="e.g. Kathryn Fletcher" required>
+                <br>
+                
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email" name="email" placeholder="kfletcher7@student.clayton.edu" required>
+                <br>
+
+                    <label for="phone">Phone number (optional):</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1 404-727-6123">
+                </fieldset>
+
+                <br>
+
+                <!-- Fieldset for contact method preference-->
+                <fieldset>
+                    <label>Preferred contact method:</label>
+                       
+                    <input type="radio" id="contactEmail" name="emailContact" value="email" checked>
+                    <label for="contactEmail">Email</label>
+                           
+                    <input type="radio" id="contactPhone" name="phoneContact" value="phone">
+                    <label for="contactPhone">Phone</label>
+                           
+                    <input type="radio" id="contactText" name="textContact" value="text">
+                    <label for="contactText">Text message</label>
+                <br>
+
+                    <!-- Textarea for feedback-->
+                    <label for="message"><i class="fas fa-pen"></i> Questions, concerns, correction, etc!</label>
+                    <textarea id="message" name="message" placeholder="There's a lore inaccuracy..." required></textarea>
+
+                <br>
+                    <select id="page" name="page">
+                    <option value="Characters">Characters</option>
+                    <option value="Quests">Quests</option>
+                    <option value="Home">Home</option>
+                    </select>
+                </fieldset>
+                <br>
+
+                <!-- Fieldset with checkboxes -->
+                <fieldset>
+                    <label>Additional Preferences: </label>
+                            
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes" checked>
+                        <label for="newsletter">Notify me whenever the website updates</label>
+
+                        <input type="checkbox" id="orderUpdates" name="orderUpdates" value="yes">
+                        <label for="orderUpdates">I'd like to contribute to the website's development</label>
+                    
+                        <input type="checkbox" id="feedback" name="feedback" value="yes">
+                        <label for="feedback">I would like to give feedback on the website</label>
+                </fieldset>
+
+            <!-- Submit button -->
+            <button type="submit">Send message</button>
+        </form>
+
+         <footer>
+            <a href="contact.html">Contact</a> &nbsp; &#9475; &nbsp; 
+            <a href="About.html">About</a>&nbsp; &#9475; &nbsp; 
+            <a href="accessibilitystatement.html">Accessibility Statement</a>&nbsp; &#9475; &nbsp; 
+
+            <p>&copy; Copyright 2026. All Rights Reserved.</p>
+
+            <p>
+                kfletcher7@student.clayton.edu 
+            </p>
+            <div class="due-date">
+                <i class="fas fa-calendar-alt" aria-hidden="true"></i> Due: November 15, 2026
+            </div>
+
+            <!--Last modified date via JavaScript-->
+            <div id="lastModified"></div>
+        </footer>
+    </body>
+</html>
